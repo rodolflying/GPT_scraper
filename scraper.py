@@ -10,13 +10,13 @@ import requests
 import json
 import random
 
-# Load the environment variables
-load_dotenv()
-API_KEY = os.getenv("API_KEY")
 
 # Set the browser driver
 def set_driver(headless=False):
-    user_profile = r"C:\Users\usuario\AppData\Local\Google\Chrome\User Data"
+    # read current user name
+    user_name = os.getlogin()
+    # set user profile path
+    user_profile = r'C:\Users\{}\AppData\Local\Google\Chrome\User Data'.format(user_name)
     options = webdriver.ChromeOptions()
     if headless:
         options.add_argument('headless')
@@ -46,8 +46,11 @@ def get_response(driver):
 
 # Save the conversation to a JSON file
 def save_conversation(conversation):
-    with open('conversation.json', 'w') as f:
-        json.dump(conversation, f)
+    #save with the date and time on the file name
+    with open('conversation_{}.json'.format(datetime.now().strftime("%Y-%m-%d_%H-%M-%S")), 'w') as f:
+        json.dump(conversation, f, indent=4)
+
+
 
 
 # Start the conversation loop
@@ -71,5 +74,5 @@ def start_conversation():
     driver.quit()
 
 
-# Start the conversation
-start_conversation()
+if __name__ == '__main__':
+    start_conversation()
