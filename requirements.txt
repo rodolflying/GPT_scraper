@@ -1,0 +1,5 @@
+beautifulsoup4==4.12.0
+pandas==1.5.3
+python-dotenv==1.0.0
+requests==2.25.1
+selenium==4.8.3
