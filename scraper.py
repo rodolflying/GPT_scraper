@@ -2,6 +2,7 @@ import pandas as pd
 import time
 import json
 import random
+import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -10,7 +11,10 @@ from urllib.parse import urlparse
 # Set the browser driver
 def set_driver(headless=False):
     driver = None
-    user_profile = r"C:\Users\usuario\AppData\Local\Google\Chrome\User Data"
+    # get current user
+    user = os.getlogin()
+    user_profile = r'C://Users//' + user + r'//AppData//Local//Google//Chrome//User Data'
+    print(user_profile)
     options = webdriver.ChromeOptions()
     if headless:
         options.add_argument('headless')
