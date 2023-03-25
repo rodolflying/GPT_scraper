@@ -35,6 +35,7 @@ choose one tool to test:
 5. secondary click on each and copy as cURL (bash)
 
 6.1. if you use postman, create a collection and click on "import", select "Raw text" and paste the cURL (bash) from conversations?offset=0&limit=20, then do the same for the other endpoint (the one that looks similiar to this "e1dbb0b1-2567-48cd-b2c0-0bcda815d7yd")
+
 6.2  if you use insomnia, create a new request and paste to the request input url the cURL (bash) from conversations?offset=0&limit=20 (then do the same for the other (the one that looks similiar to this "e1dbb0b1-2567-48cd-b2c0-0bcda815d7yd")
 *note*: with this endpoint-> "conversations?offset=0&limit=20" we get each conversation id, creation_time and title
         with this endpoint-> "e1dbb0b1-2567-48cd-b2c0-0bcda815d7yd" we get the actual conversation (then we iterate by conversation id)
