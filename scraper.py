@@ -29,7 +29,7 @@ def load_conversations(driver):
             show_more_button = driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div[2]/div/div/nav/div/div/button/div')
             driver.execute_script("arguments[0].click();", show_more_button)
             time.sleep(3)
-            break  # Wait for 4 seconds to load the conversations
+            # Wait for 3 seconds to load the conversations
         except:
             #quit the loop if the button is not found
             break
