@@ -85,5 +85,7 @@ python scraper.py
 5. Look for your results on the project folder in the json file created with the date of the conversation in this format "%Y-%m-%d_%H-%M-%S" for example : 
   conversation_2023-03-13_12-33-05.json
   
+If you were looking for use chatgpt via api, you could have some idea using this repo:  (https://github.com/rodolflying/SimpleGPT_Assist).  this way you use directly the openai API (it uses credits acording to the tokens you use in each prompt).
+  
 TODO:
 In future versions i will provide code to filter information, classify the info in custom categories with help of some ML and IA algorithms! and calculate helpful nlp insights. Let me know if you have some idea here (https://medium.com/@rodolfo.antonio.sep/scraping-all-your-conversations-with-chatgpt-made-easy-with-gpt-scrape-51da8fb97911). 
