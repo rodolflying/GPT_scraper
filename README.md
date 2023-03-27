@@ -1,5 +1,11 @@
 # GPT_scraper
-this repo is a collection of chatgpt scripts. You don't have to use any API_KEY! so it's a great way to save credits and still use the power of chat-gpt programmatically. there are 3 main tools for now:
+
+
+This repository provides a way to scrape full user history (or use) ChatGPT through 2 methods: frontend API based or Selenium based, both have their own pros. It can be helpful for avoiding the usage of API credits while still using ChatGPT programmatically.
+
+A collection of chatgpt scripts. You don't have to use any API_KEY! so it's a great way to save credits and still use the power of chat-gpt programmatically.
+
+There are 3 main tools for now:
 
 1) Backend API Scraper (dont need API_KEY just headers from your current session)
 2) Selenium Scraper
@@ -78,3 +84,6 @@ python scraper.py
 
 5. Look for your results on the project folder in the json file created with the date of the conversation in this format "%Y-%m-%d_%H-%M-%S" for example : 
   conversation_2023-03-13_12-33-05.json
+  
+TODO:
+In future versions i will provide code to filter information, classify the info in custom categories with help of some ML and IA algorithms! and calculate helpful nlp insights. Let me know if you have some idea here (https://medium.com/@rodolfo.antonio.sep/scraping-all-your-conversations-with-chatgpt-made-easy-with-gpt-scrape-51da8fb97911). 
