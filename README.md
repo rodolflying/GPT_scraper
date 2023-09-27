@@ -1,6 +1,11 @@
 # GPT_scraper
 
+UPDATE!!!
 
+Hello again!, with the new updates on chatgpt webpage its not possible to do this anymore. I've got the same error ever and ever again (Forbiden 403) and it's because openai it's working with cloudflare service, this kind of services do things like block certain ips based on machine learning algorithms, Cloudflare employs techniques like JavaScript challenges to protect websites from scraping bots. Im working on a new version, its a little tricky to scrape sites like this. Also the backend api seems to work diferently since the new updates, and probably they will change a lot of things again soon. I will post soon a new version of the scraper and conversations bot (using selenium only, this was the only way that worked for me and trust i try harded this one jajaj)
+
+
+# NOT SUPORTED ANYMORE, SINCE A NEW REPO WITH AN UPDATED VERSION
 This repository provides a way to scrape full user history (or use) ChatGPT through 2 methods: frontend API based or Selenium based, both have their own pros. It can be helpful for avoiding the usage of API credits while still using ChatGPT programmatically.
 
 A collection of chatgpt scripts. You don't have to use any API_KEY! so it's a great way to save credits and still use the power of chat-gpt programmatically.
